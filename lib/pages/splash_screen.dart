@@ -13,7 +13,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Timer(const Duration(seconds: 1), () {
+    Timer(const Duration(seconds: 2), () {
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(builder: (context) => WelcomeScreen()),
       );
@@ -23,7 +23,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black87,
+      backgroundColor: Colors.pinkAccent,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -37,12 +37,12 @@ class _SplashScreenState extends State<SplashScreen> {
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 40,
           ),
           const Text(
-            'CHAT BOX',
+            'Start Communicating',
             style: TextStyle(color: Colors.white,
-                fontSize: 20, fontWeight: FontWeight.bold, letterSpacing: 3),
+                fontSize: 16, fontWeight: FontWeight.bold, letterSpacing: 3),
           ),
           const SizedBox(
             height: 20,
@@ -51,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
           const Padding(
             padding: EdgeInsets.only(top: 200),
             child: Text(
-              'Made with ♥ by Sanu',
+              'Made by Himaanshi 🖤',
               style: TextStyle(color: Colors.white,
                   fontSize: 18, fontWeight: FontWeight.bold, letterSpacing: 3),
             ),

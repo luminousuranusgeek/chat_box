@@ -20,18 +20,19 @@ class _SigninPageState extends State<SigninPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.pinkAccent,
       appBar: AppBar(
+        elevation: 0,
         automaticallyImplyLeading: false,
-        backgroundColor: Colors.black,
-        title: const Text('Sign In', style: TextStyle(color: Colors.white),),
+        backgroundColor: Colors.pinkAccent,
+        title: const Text('Sign In', style: TextStyle(color: Colors.white, fontSize: 28),),
         actions: [
           IconButton(
               onPressed: () {
                 _auth.signOut();
                 Navigator.pop(context);
               },
-              icon: const Icon(Icons.logout, color: Colors.grey,))
+              icon: const Icon(Icons.logout, color: Colors.white,))
         ],
       ),
       body: ModalProgressHUD(
@@ -62,7 +63,7 @@ class _SigninPageState extends State<SigninPage> {
                       fillColor: Colors.white,
                       hintText: 'Enter Your Email',
                       contentPadding: EdgeInsets.symmetric(
-                          vertical: 10.0, horizontal: 20.0),
+                          vertical: 20.0, horizontal: 20.0),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.all(
                           Radius.circular(10.0),
@@ -70,9 +71,9 @@ class _SigninPageState extends State<SigninPage> {
                       ),
                       focusedBorder: OutlineInputBorder(
                           borderSide:
-                          BorderSide(color: Colors.grey, width: 3.0),
+                          BorderSide(color: Colors.redAccent, width: 3.0),
                           borderRadius:
-                          BorderRadius.all(Radius.circular(10.0)))),
+                          BorderRadius.all(Radius.circular(30.0)))),
                 ),
                 const SizedBox(
                   height: 8.0,
@@ -87,7 +88,7 @@ class _SigninPageState extends State<SigninPage> {
                     fillColor: Colors.white,
                     hintText: 'Enter Your Password',
                     contentPadding:
-                    EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+                    EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(10.0),
@@ -95,9 +96,9 @@ class _SigninPageState extends State<SigninPage> {
                     ),
                     focusedBorder: OutlineInputBorder(
                       borderSide:
-                      BorderSide(color: Colors.grey, width: 3.0),
+                      BorderSide(color: Colors.redAccent, width: 3.0),
                       borderRadius: BorderRadius.all(
-                        Radius.circular(10.0),
+                        Radius.circular(30.0),
                       ),
                     ),
                   ),
@@ -106,9 +107,9 @@ class _SigninPageState extends State<SigninPage> {
                   height: 24.0,
                 ),
                 Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 16.0),
+                  padding: const EdgeInsets.symmetric(vertical: 10.0),
                   child: Material(
-                    color: Colors.grey[300],
+                    color: Colors.pink[100],
                     borderRadius: const BorderRadius.all(Radius.circular(10.0)),
                     elevation: 5.0,
                     child: MaterialButton(

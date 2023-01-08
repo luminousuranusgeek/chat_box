@@ -52,19 +52,19 @@ class _Page4State extends State<Page4> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[850],
+      backgroundColor: Colors.pink[50],
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        backgroundColor: Colors.black87,
+        backgroundColor: Colors.pinkAccent,
         elevation: 0,
-        title: const Text('Paint', style: TextStyle(color: Colors.grey)),
+        title: const Text('Paint', style: TextStyle(color: Colors.white)),
         actions: [
           IconButton(
               onPressed: () {
                 _auth.signOut();
                 Navigator.pop(context);
               },
-              icon: const Icon(Icons.logout, color: Colors.grey,))
+              icon: const Icon(Icons.logout, color: Colors.white,))
         ],
       ),
       body: Column(
@@ -226,7 +226,7 @@ class MessageBubble extends StatelessWidget {
                   ],
                 ),
               ),
-              color: isMe == true ? Colors.grey : Colors.grey[700],
+              color: isMe == true ? Colors.pink[100] : Colors.pink[200],
             ),
           ],
         ),

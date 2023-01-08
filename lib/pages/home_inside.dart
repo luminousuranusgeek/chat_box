@@ -18,11 +18,11 @@ class _HomeInsideState extends State<HomeInside> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey[850],
+        backgroundColor: Colors.pink[50],
       appBar: AppBar(
         automaticallyImplyLeading: false,
-        title: Text('Home Screen', style: TextStyle(color: Colors.grey)),
-        backgroundColor: Colors.black87,
+        title: Text(' Home Screen', style: TextStyle(color: Colors.white)),
+        backgroundColor: Colors.pinkAccent,
         elevation: 0,
         actions: [
           IconButton(
@@ -30,15 +30,15 @@ class _HomeInsideState extends State<HomeInside> {
                 _auth.signOut();
                 Navigator.pop(context);
               },
-              icon: const Icon(Icons.logout, color: Colors.grey,))
+              icon: const Icon(Icons.logout, color: Colors.white,))
         ],
       ),
 
       body: Column(
         children: [
           Container(
-            height: 750-27.1,
-            color: Colors.black87,
+            height: 722.9,
+            color: Colors.pinkAccent,
             padding: EdgeInsets.all(10),
             child:
               Column(
@@ -46,10 +46,10 @@ class _HomeInsideState extends State<HomeInside> {
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Colors.grey[700],
+                      color: Colors.pink[100],
 
                     ),
-                    child: IconButton( icon:Icon(Icons.code_off),
+                    child: IconButton( icon:Icon(Icons.code),
                     onPressed: (){
                       Navigator.pushNamed(context, ChatScreen.routeName);
                     },
@@ -59,10 +59,10 @@ class _HomeInsideState extends State<HomeInside> {
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Colors.grey[700],
+                      color: Colors.pink[100],
 
                     ),
-                    child: IconButton( icon:Icon(Icons.sports_soccer),
+                    child: IconButton( icon:Icon(Icons.camera),
                       onPressed: (){
                         Navigator.pushNamed(context, Page1.routeName);
                       },
@@ -72,10 +72,10 @@ class _HomeInsideState extends State<HomeInside> {
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Colors.grey[700],
+                      color: Colors.pink[100],
 
                     ),
-                    child: IconButton( icon:Icon(Icons.camera_alt_outlined),
+                    child: IconButton( icon:Icon(Icons.sports_football_outlined),
                         onPressed: (){
                           Navigator.pushNamed(context, Page2.routeName);
                         },
@@ -85,7 +85,7 @@ class _HomeInsideState extends State<HomeInside> {
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Colors.grey[700],
+                      color: Colors.pink[100],
 
                     ),
                     child: IconButton( icon:Icon(Icons.music_note_outlined),
@@ -98,7 +98,7 @@ class _HomeInsideState extends State<HomeInside> {
                   Container(
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Colors.grey[700],
+                      color: Colors.pink[100],
 
                     ),
                     child: IconButton( icon:Icon(Icons.palette_outlined),

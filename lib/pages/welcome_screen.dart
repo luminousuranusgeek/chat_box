@@ -13,19 +13,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.pinkAccent,
       appBar: AppBar(
-        backgroundColor: Colors.black,
-        title: const Text("Start Talkin'...", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 24),),
+        backgroundColor: Colors.pinkAccent,
+        title: const Text(" Let's Chat", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 24),),
         elevation: 0,
 
-        actions: [
-          IconButton(
-            color: Colors.white,
-            onPressed: () {},
-            icon: const Icon(Icons.person),
-          ),
-        ],
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 24.0),
@@ -64,7 +57,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               padding: const EdgeInsets.symmetric(vertical: 16.0),
               child: Material(
                 elevation: 5.0,
-                color: Colors.grey[300],
+                color: Colors.pink[50],
                 borderRadius: BorderRadius.circular(10.0),
                 child: MaterialButton(
                   onPressed: () {
@@ -82,7 +75,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               padding: const EdgeInsets.symmetric(vertical: 16.0),
               child: Material(
                 elevation: 5.0,
-                color: Colors.grey[300],
+                color: Colors.pink[50],
                 borderRadius: BorderRadius.circular(10.0),
                 child: MaterialButton(
                   onPressed: () {
